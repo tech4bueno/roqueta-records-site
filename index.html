@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roqueta Records</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine JS CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif; /* Default body font */
+        }
+        .font-display {
+            font-family: 'EB Garamond', serif; /* Heading/Display font */
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'roqueta-primary': '#B08968', // A slightly adjusted warm, earthy color
+                'roqueta-secondary': '#4A4A4A', // Dark gray for text/accents
+                'roqueta-light': '#FDFBF6', // Creamy background
+                'roqueta-dark': '#3A3A3A', // Darker shade for contrast
+                'roqueta-accent': '#7F5539', // A richer brown for accents
+              },
+              fontFamily: {
+                sans: ['Lato', 'sans-serif'],
+                serif: ['EB Garamond', 'serif'], // For use with font-serif if needed
+                display: ['EB Garamond', 'serif'], // Custom utility for headings
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-roqueta-light text-roqueta-secondary antialiased">
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- About Section -->
+        <section class="mb-16 text-center">
+            <h2 class="text-5xl font-display font-bold mb-6 text-roqueta-secondary">Roqueta Records</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto font-sans leading-relaxed">
+                We are a tiny, independent record label.
+            </p>
+        </section>
+
+        <!-- Artists Section -->
+        <section id="artists">
+            <h2 class="text-4xl font-display font-semibold mb-10 text-center text-roqueta-secondary">
+                <span class="pb-2 border-b-2 border-roqueta-primary">Our Artists</span>
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Artist 1: Jerrie Manchester -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/B08968/FDFBF6?text=Jerrie+M." alt="Jerrie Manchester" class="w-full h-60 object-cover">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-display font-semibold mb-2 text-roqueta-secondary">Jerrie Manchester</h3>
+                        <p class="text-sm text-roqueta-accent font-semibold mb-3 font-sans">Tin Pan Alley, Traditional</p>
+                        <p class="text-gray-600 text-sm font-sans leading-relaxed">
+                            Jerrie brings the timeless charm of Tin Pan Alley and traditional melodies to a new generation.
+                            Classic vocals with a modern heart.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Artist 2: Placeholder -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col border border-gray-200">
+                    <img src="https://placehold.co/600x400/D1D5DB/6B7280?text=Coming+Soon" alt="Artist Placeholder" class="w-full h-60 object-cover opacity-70">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-display font-semibold mb-2 text-gray-700">Artist Name Coming Soon</h3>
+                        <p class="text-sm text-gray-500 font-semibold mb-3 font-sans">Genre To Be Announced</p>
+                        <p class="text-gray-600 text-sm font-sans leading-relaxed">
+                            Stay tuned for exciting new talent joining the Roqueta family! We're currently scouting for unique sounds.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Artist 3: Placeholder -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col border border-gray-200">
+                    <img src="https://placehold.co/600x400/D1D5DB/6B7280?text=Coming+Soon" alt="Artist Placeholder" class="w-full h-60 object-cover opacity-70">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-display font-semibold mb-2 text-gray-700">Artist Name Coming Soon</h3>
+                        <p class="text-sm text-gray-500 font-semibold mb-3 font-sans">Genre To Be Announced</p>
+                        <p class="text-gray-600 text-sm font-sans leading-relaxed">
+                            Stay tuned for exciting new talent joining the Roqueta family! We're currently scouting for unique sounds.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Artist 4: Placeholder -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col border border-gray-200">
+                    <img src="https://placehold.co/600x400/D1D5DB/6B7280?text=Coming+Soon" alt="Artist Placeholder" class="w-full h-60 object-cover opacity-70">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-display font-semibold mb-2 text-gray-700">Artist Name Coming Soon</h3>
+                        <p class="text-sm text-gray-500 font-semibold mb-3 font-sans">Genre To Be Announced</p>
+                        <p class="text-gray-600 text-sm font-sans leading-relaxed">
+                            Stay tuned for exciting new talent joining the Roqueta family! We're currently scouting for unique sounds.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Artist 5: Placeholder -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col border border-gray-200">
+                    <img src="https://placehold.co/600x400/D1D5DB/6B7280?text=Coming+Soon" alt="Artist Placeholder" class="w-full h-60 object-cover opacity-70">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-display font-semibold mb-2 text-gray-700">Artist Name Coming Soon</h3>
+                        <p class="text-sm text-gray-500 font-semibold mb-3 font-sans">Genre To Be Announced</p>
+                        <p class="text-gray-600 text-sm font-sans leading-relaxed">
+                            Stay tuned for exciting new talent joining the Roqueta family! We're currently scouting for unique sounds.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact/Call to Action -->
+        <section class="mt-20 py-16 bg-roqueta-dark text-roqueta-light rounded-lg shadow-xl">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-display font-semibold mb-6">Want to chat?</h2>
+                <p class="mb-8 max-w-xl mx-auto font-sans leading-relaxed">
+                    Whether you're an artist looking for a home, or a fan of our music, we'd love to hear from you.
+                </p>
+                <a href="mailto:contact@roquetarecords.com"
+                   class="bg-roqueta-primary text-white font-semibold px-10 py-4 rounded-md hover:bg-roqueta-accent transition-colors text-lg font-sans shadow-md hover:shadow-lg">
+                    Get In Touch
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-roqueta-dark mt-20">
+        <div class="container mx-auto px-6 py-10 text-center text-gray-400 font-sans">
+            <p>© <span id="currentYear"></span> Roqueta Records. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
